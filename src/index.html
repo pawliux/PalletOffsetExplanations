@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code structuring</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script id="pallet-data1-4js" type="application/json">{"size": {"length": 910.0, "width": 910.0}, "top": {"height": 0.19, "width": 1.0, "length": 9.1, "count": 5}, "stringer": {"height": 0.38, "width": 0.75, "length": 9.1, "count": 3}, "bottom": {"height": 0.19, "width": 1.0, "length": 8.1, "count": 3}, "block": {"height": 0, "width": 0, "length": 0, "count": 0}, "type": "TwoWays", "wingTop": 50, "wingBottom": 0, "topGaps": [0, 227], "stringerGaps": [], "bottomGaps": []}</script>
+    <script id="pallet-data2-4js" type="application/json">{"size": {"length": 1200.0, "width": 1000.0}, "top": {"height": 0.16, "width": 0.75, "length": 12.0, "count": 5}, "stringer": {"height": 0.16, "width": 0.75, "length": 10.0, "count": 5}, "bottom": {"height": 0.18, "width": 0.9, "length": 12.0, "count": 3}, "block": {"height": 0.75, "width": 0.75, "length": 0.9, "count": 9}, "type": "FourWays", "wingTop": 0, "wingBottom": 0, "topGaps": [], "stringerGaps": [], "bottomGaps": []}</script>
+    <!-- <script id="pallet-data-4js" type="application/json">{"size": {"length": 1030.0, "width": 1120.0}, "top": {"height": 0.19, "width": 1.0, "length": 10.3, "count": 10}, "stringer": {"height": 0.44999999999999996, "width": 0.8799999999999999, "length": 11.200000000000001, "count": 4}, "bottom": {"height": 0, "width": 0, "length": 0, "count": 0}, "block": {"height": 0, "width": 0, "length": 0, "count": 0}, "type": "TwoWays", "wingTop": 75, "wingBottom": 0, "topGaps": [], "stringerGaps": [0, 350], "bottomGaps": []}</script> -->
+    <!-- <script id="pallet-data-4js" type="application/json">{"size": {"length": 1200.0, "width": 1000.0}, "top": {"height": 0.19, "width": 1.0, "length": 12.0, "count": 7}, "stringer": {"height": 0.75, "width": 0.75, "length": 10.0, "count": 3}, "bottom": {"height": 0.19, "width": 1.0, "length": 10.5, "count": 4}, "block": {"height": 0, "width": 0, "length": 0, "count": 0}, "type": "TwoWays", "wingTop": 75, "wingBottom": 0, "topGaps": [], "stringerGaps": [], "bottomGaps": [50, 170]}</script> -->
+    <!-- <script id="pallet-data-4js" type="application/json">{"size": {"length": 1000.0, "width": 1000.0}, "top": {"height": 0.16, "width": 1.0, "length": 10.0, "count": 9}, "stringer": {"height": 0.21999999999999997, "width": 1.0, "length": 10.0, "count": 3}, "bottom": {"height": 0.21999999999999997, "width": 1.0, "length": 10.0, "count": 3}, "block": {"height": 0.75, "width": 0.75, "length": 1.0, "count": 9}, "type": "FourWays", "wingTop": 0, "wingBottom": 0, "topGaps": [], "stringerGaps": [], "bottomGaps": []}</script> -->
+    <!-- <script id="pallet-data-4js" type="application/json">{"size": {"length": 2000.0, "width": 1000.0}, "top": {"height": 0.21999999999999997, "width": 1.0, "length": 20.0, "count": 5}, "stringer": {"height": 0.21999999999999997, "width": 1.0, "length": 10.0, "count": 3}, "bottom": {"height": 0.21999999999999997, "width": 1.0, "length": 18.0, "count": 3}, "block": {"height": 0.5, "width": 1.0, "length": 1.0, "count": 9}, "type": "FourWays", "wingTop": 100, "wingBottom": 0, "topGaps": [], "stringerGaps": [], "bottomGaps": [], "doubleStringer": false}</script> -->
+    
+    <div class="canvas-container">
+        <canvas class="webgl"></canvas>
+        <div class="info-bar-top">
+            <div class="vertical-container">
+                <!-- <img src="/images/norlund-logo.png"/> -->
+            </div>
+        </div>
+        <div class="info-bar-bottom">
+            <div class="copyright-info">
+                &copy; 2025 Paulius Butiskis.
+            </div>
+        </div>
+        <div class="info-bar-topleft">
+            <div class="company-logo">
+                <img src="images/norlund-logo-w.png" width="174" height="82" alt="norlund-logo"/>
+            </div>
+            <div class="pallet-data-table">
+                <div class="pallet-data-info-line space-around-1em">
+                    <div class="pallet-data-info-name"></div>
+                </div>
+                <div class="pallet-data-info-line">
+                    <div class="pallet-data-info-header"></div>
+                    <div class="pallet-data-info-unit"></div>
+                </div>
+                <div class="pallet-data-info-line">
+                    <div class="pallet-data-info-header"></div>
+                    <div class="pallet-data-info-unit"></div>
+                </div>
+                <div class="pallet-data-info-line">
+                    <div class="pallet-data-info-header"></div>
+                    <div class="pallet-data-info-unit"></div>
+                </div>
+                <div class="pallet-data-info-line">
+                    <div class="pallet-data-info-header"></div>
+                    <div class="pallet-data-info-unit"></div>
+                </div>
+                <div class="pallet-data-info-line">
+                    <div class="pallet-data-info-header"></div>
+                    <div class="pallet-data-info-unit"></div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
