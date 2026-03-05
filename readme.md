@@ -1,4 +1,4 @@
-# Three.js Journey
+# Three JS Project "Pallet offset explainer"
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
